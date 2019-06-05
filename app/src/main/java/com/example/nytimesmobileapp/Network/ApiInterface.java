@@ -1,4 +1,4 @@
-package com.example.nytimesmobileapp.Retrofit;
+package com.example.nytimesmobileapp.Network;
 
 import android.support.annotation.NonNull;
 

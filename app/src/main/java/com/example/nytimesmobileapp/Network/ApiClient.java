@@ -1,16 +1,17 @@
-package com.example.nytimesmobileapp.Retrofit;
+package com.example.nytimesmobileapp.Network;
+
+import com.example.nytimesmobileapp.Constants;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
-    public static final String BASE_URL = "https://api.nytimes.com/svc/books/v3/";
     public static Retrofit mretrofit;
 
     public static Retrofit getClient() {
         if (mretrofit == null) {
             mretrofit = new Retrofit.Builder()
-                    .baseUrl(BASE_URL)
+                    .baseUrl(Constants.BASE_URL)
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
