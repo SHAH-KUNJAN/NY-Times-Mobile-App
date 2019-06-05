@@ -13,7 +13,7 @@ public class TopBooksResponse {
     private int numResults;
 
     @SerializedName("results")
-    private List<TopBooksResult> results;
+    private TopBooksResult results;
 
     @SerializedName("status")
     private String status;
@@ -26,7 +26,7 @@ public class TopBooksResponse {
         return numResults;
     }
 
-    public List<TopBooksResult> getResults() {
+    public TopBooksResult getResults() {
         return results;
     }
 
