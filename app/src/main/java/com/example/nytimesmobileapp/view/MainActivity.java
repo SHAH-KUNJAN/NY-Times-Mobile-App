@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements MainView {
         mMainAdapter = new MainAdapter(mTopBooks, mItemClickListener);
         mRecyclerView.setAdapter(mMainAdapter);
         // publishDate =  null means current otherwise you can pass the date.
-        mPresenter = new MainPresenter(this, new MainIntractorClass(), "");
+        mPresenter = new MainPresenter(this, new MainIntractorClass(), "2013-05-22");
         mPresenter.getData();
     }
 
