@@ -11,8 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.TopBookActivity"
-            android:label="Top Books"></activity>
+        <activity
+            android:name=".view.BookDetailsActivity"
+            android:label="Top Book Details"></activity>
+        <activity
+            android:name=".view.TopBookActivity"
+            android:label="Top Books" />
         <activity android:name=".view.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

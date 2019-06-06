@@ -1,5 +1,6 @@
 package com.example.nytimesmobileapp.view;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
@@ -40,7 +41,11 @@ public class TopBookActivity extends AppCompatActivity {
     TopBookClickListener mTopBookClickListener = new TopBookClickListener() {
         @Override
         public void onClickListener(TopBooks mTopBooks) {
-
+            Intent intent = new Intent(TopBookActivity.this, BookDetailsActivity.class);
+            Bundle bundle = new Bundle();
+            bundle.putParcelable(BookDetailsActivity.BOOK_EXTRA_DETAILS, mTopBooks);
+            intent.putExtras(bundle);
+            startActivity(intent);
         }
     };
 
