@@ -19,7 +19,7 @@
             android:label="Top Books" />
         <activity
             android:name=".view.MainActivity"
-            android:label="Book List">
+            android:label="NYT Books">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
