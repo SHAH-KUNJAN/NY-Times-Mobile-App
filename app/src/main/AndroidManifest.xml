@@ -17,7 +17,9 @@
         <activity
             android:name=".view.TopBookActivity"
             android:label="Top Books" />
-        <activity android:name=".view.MainActivity">
+        <activity
+            android:name=".view.MainActivity"
+            android:label="Book List">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
